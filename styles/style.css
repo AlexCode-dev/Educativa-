@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --negro: #000;
+  --verde: #35ebcf;
+  --blanco: #ffff;
+  --morado: #56468f;
+  --gris: #6d6d6d;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: var(--negro);
+  align-items: center;
+  align-content: center;
+}
+
+nav h1 {
+  margin-left: 100px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--blanco);
+}
+
+nav span {
+  color: var(--verde);
+}
+
+.principal-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 200px;
+  margin-top: 10%;
+}
+
+.principal-section .left {
+  width: 669px;
+  height: 600px;
+}
+
+.left h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 158px;
+  /* identical to box height */
+
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.left p {
+  width: 661px;
+  height: 160px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 158%;
+  /* or 40px */
+
+  text-align: right;
+  letter-spacing: 0.025em;
+
+  color: var(--gris);
+  margin-bottom: 50px;
+}
+
+.left span {
+  color: var(--verde);
+}
+
+.left a {
+  text-decoration: none;
+  background: var(--morado);
+  text-align: center;
+  width: 190px;
+  height: 50px;
+  padding: 25px;
+  border-radius: 10px;
+  color: var(--blanco);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 158%;
+  /* identical to box height, or 19px */
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.left a:hover {
+  background: var(--verde);
+}
+
+.right img {
+  width: 800px;
+  height: 600px;
+}
+
+.left {
+  text-align: right;
+}
+
+/*course*/
+.courses-section {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.tittle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 38px;
+  /* identical to box height */
+
+  /* Gris */
+
+  color: var(--gris);
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+
+.tittle span {
+  color: var(--verde);
+}
+
+.course {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.text span {
+  color: var(--verde);
+}
+
+.course .text {
+  text-align: justify;
+  margin-left: 50px;
+}
+
+.subtitttle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 38px;
+  /* identical to box height */
+
+  /* Gris */
+
+  color: #6d6d6d;
+}
+.text p {
+  width: 80%;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.course a {
+  text-decoration: none;
+  background: var(--morado);
+  text-align: center;
+  width: 600px;
+  height: 50px;
+  padding: 25px;
+  border-radius: 10px;
+  color: var(--blanco);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 158%;
+  /* identical to box height, or 19px */
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+.course a:hover {
+  background: var(--verde);
+}
+
+footer {
+ 
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background: var(--negro);
+  align-items: center;
+  align-content: center;
+  gap: 34%;
+  
+}
+
+footer h1 {
+  margin-left: 100px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--blanco);
+}
+
+footer span {
+  color: var(--verde);
+}
+
+footer h3 {
+  color: var(--blanco);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 12px;
+}
+footer h3:nth-child(1){
+  color: var(--verde);
+}
+
+
+.extra{
+  width: 100%;
+  height: 300px;
+  background: var(--morado);
+  margin-top: 300px;
+  color: var(--blanco);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.extra h3{
+  font-weight: 200;
+}
+.text-img img{
+  width: 200px;
+  height: auto;
+  padding-top: 30px;
+}
+
+
+@media all and (max-width: 1400px) {
+    .right img{
+    max-width:90%;
+     height: 300px;
+    }
+    footer{
+        max-width: 100%;
+    }
+}

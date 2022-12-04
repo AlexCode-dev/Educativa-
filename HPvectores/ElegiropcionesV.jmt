@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jmatch-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>Paulina</dc:creator>
+    <dc:title>Autoevaluaci&amp;#x00F3;n de Practica de Vectores</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>7</version>
+
+<data>
+<title>Autoevaluaci&amp;#x00F3;n de Practica de Vectores</title>
+
+<timer><seconds>300</seconds><include-timer>1</include-timer></timer>
+
+<reading>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<matching-exercise>
+<default-right-item>-</default-right-item>
+
+<pair>
+<left-item><text>{
+int i=0;
+int vector[5];
+do{
+     printf(&quot;Dar valor: &amp;#x201D;);
+     scanf(&quot;%d&quot;,&amp;#x0026;vector[i]);
+     i++;}
+while(i&amp;#x003C;5);
+}
+</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>Recorrido</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>
+{
+int i=0;
+int vector[5]={1,35,0,21,2};
+printf(&quot; \nElemento: &quot;,vector[3]);
+vector[2]=50;
+}
+</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>Lectura/Escritura</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>
+
+{
+int vector[5]={15,3,1,52,25};&amp;#x00A0;
+vector[3]=14;
+}</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>Asignaci&amp;#x00F3;n</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>
+{
+int n=6;
+int b=0;
+int vector[n]={0,2,3,5,9};
+int i=0;
+int asignar=4;
+do{ 
+   if(vector[i]&amp;#x003C;asignar)
+    {i++;}  
+     else
+      {vector[i+1]=vector[i];
+      i++;}
+}while(i&amp;#x003C;n);
+i=0;
+
+do{
+     if(vector[i]&amp;#x003C;asignar)
+     {i++;}
+       else
+         {vector[i]=vector[i]
+         ;b=1;}
+}while(b!=1);
+}
+</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text> Insertar elementos</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>
+{
+int n=6;
+int j=0;
+int vector[n]={0,2,3,4, 5,9};
+int i=0;
+int borrar=5;
+do{
+     if(vector[i]=borrar)
+       {j=i;
+        i++;}
+         else
+          {i++;}
+}while(i&amp;#x003C;n);
+i=0;
+do{
+vector[j]=vector[j+1];
+j++;
+}while(j&amp;#x003C;n-1);
+}
+</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text> Borrar elementos</text>
+<fixed>0</fixed>
+</right-item></pair>
+</matching-exercise>
+</data>
+
+<hotpot-config-file>
+<jmatch>
+<exercise-subtitle></exercise-subtitle>
+<instructions>Unir los elementos de la izquierda con las opciones presentadas en la derecha seg&amp;#x00FA;n corresponda. En la izquierda se encuentra una peque&amp;#x00F1;a fraccion de codigo main y en la derecha, las diferentes operaciones a las que puede corresponder dicho codigo.</instructions>
+<next-ex-url>nextpage.htm</next-ex-url>
+<send-email>0</send-email>
+<show-limited-questions>0</show-limited-questions>
+<questions-to-show>1</questions-to-show>
+<shuffle-questions>0</shuffle-questions>
+<separate-javascript-file>0</separate-javascript-file>
+<next-caption>Siguiente</next-caption>
+<delete-caption>Borrar</delete-caption>
+<guess-correct>Correcto! Bien hecho!</guess-correct>
+<guess-incorrect>Respuesta incorrecta. Revisar la teor&amp;#x00ED;a</guess-incorrect>
+</jmatch>
+
+<global>
+<your-score-is></your-score-is>
+<correct-indicator>&amp;#x2714;</correct-indicator>
+<incorrect-indicator>&amp;#x2718;</incorrect-indicator>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+<times-up>Your time is over!</times-up>
+<check-caption>Controlar</check-caption>
+<ok-caption>OK</ok-caption>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Index</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>1</include-contents>
+<include-back>1</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url>Imagenes/Fondo.png</graphic-url>
+<font-face>Geneva,Arial,sans-serif,Bold</font-face>
+<font-size>Medium</font-size>
+<page-bg-color>#C0C0C0</page-bg-color>
+<title-color>#56468f</title-color>
+<ex-bg-color>#FFFFFF</ex-bg-color>
+<text-color>#6c6c6c</text-color>
+<link-color>#56468f</link-color>
+<vlink-color>#56468f</vlink-color>
+<nav-bar-color>#35ebcf</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+</global>
+</hotpot-config-file>
+</hotpot-jmatch-file>
